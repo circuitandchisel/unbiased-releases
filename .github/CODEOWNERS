@@ -1,0 +1,10 @@
+# CODEOWNERS - human review on public release notes
+#
+# This repo is the public SOC2-facing source of truth for customer-facing
+# release notes. Changes to published notes, policy, or automation should be
+# reviewed by engineering.
+
+/CHANGELOG.md       @circuitandchisel/engineering
+/README.md          @circuitandchisel/engineering
+/CONTRIBUTING.md    @circuitandchisel/engineering
+/.github/           @circuitandchisel/engineering
