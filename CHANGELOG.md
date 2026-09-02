@@ -18,6 +18,16 @@ Use this section for reviewed entries that are approved but not yet tied to a da
 
 ### Security / Compliance
 
+## 2026-09-02
+
+### Connectors
+
+#### Changed
+
+- Required the `release` label whenever connector changelog entries are changed, so approved release notes are automatically tagged and promoted to the public changelog workflow after merge.
+- Added an explicit `changelog-housekeeping` path for changelog-only maintenance edits that should not publish a release note.
+- Removed the unused `Unreleased` staging section so connector release notes cannot be merged without a dated release section.
+
 ## 2026-09-01
 
 ### Connectors
