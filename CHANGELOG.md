@@ -20,6 +20,12 @@ Use this section for reviewed entries that are approved but not yet tied to a da
 
 ## 2026-09-02
 
+### Platform / API
+
+#### Changed
+
+- Required platform changelog changes to declare whether they should publish immediately, be held for gated availability, or remain changelog-only housekeeping.
+
 ### Connectors
 
 #### Changed
