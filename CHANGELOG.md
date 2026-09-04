@@ -20,6 +20,12 @@ Use this section for reviewed entries that are approved but not yet tied to a da
 
 ## 2026-09-02
 
+### Routing
+
+#### Added
+
+- Added persisted backend failure metrics so operators can troubleshoot routing health over time.
+
 ### Platform / API
 
 #### Changed
