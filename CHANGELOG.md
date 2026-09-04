@@ -10,7 +10,7 @@ Use this section for reviewed entries that are approved but not yet tied to a da
 
 ### CLI
 
-### Platform / API
+### Platform
 
 ### Connectors
 
@@ -45,7 +45,7 @@ Use this section for reviewed entries that are approved but not yet tied to a da
 
 - Added persisted backend failure metrics so operators can troubleshoot routing health over time.
 
-### Platform / API
+### Platform
 
 #### Changed
 
@@ -112,7 +112,7 @@ Copy this shape when publishing a dated release section:
 
 - Changed ...
 
-### Platform / API
+### Platform
 
 - Fixed ...
 
