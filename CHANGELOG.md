@@ -18,6 +18,25 @@ Use this section for reviewed entries that are approved but not yet tied to a da
 
 ### Security / Compliance
 
+## 2026-09-04
+
+### API
+
+#### Added
+
+- Added server-side tool support for Messages and Responses-compatible API traffic, including web search, image generation, patch application, and tool discovery.
+- Added Anthropic-compatible `tool_search` handling so clients can discover supported tools through the Messages API adapter.
+
+#### Changed
+
+- Server tools are now enabled by default for eligible API traffic.
+- Improved personal-plan admission checks so plan limits are applied consistently across API keys and workloads.
+
+#### Fixed
+
+- Improved server-tool replay and tool-call handling across supported providers.
+- Clarified low-balance and invalid-key API guidance.
+
 ## 2026-09-02
 
 ### Routing
