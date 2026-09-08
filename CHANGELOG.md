@@ -26,11 +26,14 @@ Use this section for reviewed entries that are approved but not yet tied to a da
 
 - Added server-side tool support for Messages and Responses-compatible API traffic, including web search, image generation, patch application, and tool discovery.
 - Added Anthropic-compatible `tool_search` handling so clients can discover supported tools through the Messages API adapter.
+- Added non-streaming support for server tools: a `/v1/responses` or `/v1/messages` request that declares a server tool without `stream: true` now receives one JSON response body — the same object a streaming client receives in its final event — instead of the previous `server_tools_streaming_only` error, which is retired.
 
 #### Changed
 
 - Server tools are now enabled by default for eligible API traffic.
 - Improved personal-plan admission checks so plan limits are applied consistently across API keys and workloads.
+- Non-streaming server-tool requests run under a 300-second wall-clock budget: when less than 120 seconds remain the model is asked for its final answer, and a request still running at 300 seconds returns `504` with the message "Server-tool loop exceeded its wall-clock budget". Streaming requests are not affected.
+- Mid-request failures on non-streaming server-tool requests return HTTP statuses instead of in-band stream events: `502` for an upstream failure, `500` for a billing settlement failure, `402` when prepaid credit runs out between tool turns, `503` during a deploy drain. Completed tool turns are billed as before.
 
 #### Fixed
 
