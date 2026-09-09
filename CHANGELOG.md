@@ -18,6 +18,14 @@ Use this section for reviewed entries that are approved but not yet tied to a da
 
 ### Security / Compliance
 
+## 2026-09-09
+
+### Routing
+
+#### Security
+
+- Bumped vulnerable dependencies flagged by today's audit-gate advisories: multer 2.2.0 → 2.3.0 (multiple DoS advisories, runtime-reachable), vitest 4.1.10 → 4.1.11, qs 6.15.3 → 6.16.0 (runtime-reachable via express), js-yaml 4.3.1 → 4.3.2 (dev-only). CI's audit gate had been failing repo-wide since the advisories dropped.
+
 ## 2026-09-04
 
 ### API
