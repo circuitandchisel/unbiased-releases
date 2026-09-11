@@ -18,6 +18,19 @@ Use this section for reviewed entries that are approved but not yet tied to a da
 
 ### Security / Compliance
 
+## 2026-09-10
+
+### Platform
+
+#### Added
+
+- Added an explicit "Skip for now" option to the billing step of the workload setup wizard, so an organization can finish setup and buy credits later. Organizations with no credits are warned that requests will be refused until they buy some; organizations that already hold a balance skip without interruption.
+- Added a reminder email sent about a day after an account becomes usable, to organizations that have not sent a request yet. Funded organizations get their balance and the two strings needed to point a client at Pareto; organizations with no credits get the current rates and the free onboarding-hour offer.
+
+#### Changed
+
+- The setup wizard's close button is now visible on desktop, not only on small screens.
+
 ## 2026-09-04
 
 ### API
